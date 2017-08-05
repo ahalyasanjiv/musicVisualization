@@ -3,18 +3,41 @@
 <head>
   <meta charset="utf-8">
     <title>Oscillator</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+
     <script src="node_modules/tone/build/Tone.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
-    
+
+
 </head>
 <body>
-    <div id="Content">
-       hello world!
-    </div>
+
+  <nav id="fig">Audio Visualization Project</nav>
+
+ <div id="des">
+
+   <section id="intro">
+    <article>
+      An amazing audio visualization project created @ a hackathon by an amazing
+      team! Click the upload button to upload audio files, then await the
+      vizualizaitons to begin!
+
+    </article>
+
+   </section>
+
+
+   <section id="visual">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 47"><defs><style>.cls-1{fill:#ff7bac;}.cls-2{fill:#96f;}.cls-3{fill:#c36;}</style></defs><title>visual</title><rect class="cls-1" y="2" width="45" height="43"/><circle class="cls-2" cx="59.5" cy="23.5" r="23.5"/><rect class="cls-3" x="85" y="3" width="4" height="43"/></svg>
+
+   </section>
+
+
+ </div>
+
+
+
 
     <script id="ToneCode">
         var synth = new Tone.Synth().toMaster();
