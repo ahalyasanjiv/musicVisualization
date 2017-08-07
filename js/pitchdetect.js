@@ -200,7 +200,8 @@ var tracks = null;
 var buflen = 1024;
 var buf = new Float32Array( buflen );
 
-var noteStrings = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+var noteStrings = ["red", "orange", "yellow", "green", "white", "black", "blue", "pink", "purple", "brown", "violet", "magenta"];
+// var noteStrings = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 
 function noteFromPitch( frequency ) {
 	var noteNum = 12 * (Math.log( frequency / 440 )/Math.log(2) );

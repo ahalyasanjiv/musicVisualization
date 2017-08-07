@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <script src="node_modules/tone/build/Tone.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="style.css">
 <style>
   body { font: 14pt 'Alike', sans-serif;}
-  #note { font-size: 164px; }
+  #note { font-size: 50px; padding-top: 65px;}
   .droptarget { background-color: #348781}
   div.confident { color: black; }
   div.vague { color: lightgrey; }
@@ -38,7 +39,7 @@
 		<div id="detector" class="vague">
 			<div class="pitch"><span id="pitch">--</span>Hz</div>
 			<div class="note"><span id="note">--</span></div>
-			<canvas id="output" width=300 height=42></canvas>
+			<canvas id="output" width="300px" height="42px"></canvas>
 			<div id="detune"><span id="detune_amt">--</span><span id="flat">cents &#9837;</span><span id="sharp">cents &#9839;</span></div>
 		</div>
 
@@ -56,10 +57,6 @@
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
-    <div id="Content">
-       hello world!
-    </div>
-
     <script id="ToneCode">
         var synth = new Tone.Synth().toMaster();
         synth.triggerAttackRelease("C4", "8n");
